@@ -5,7 +5,7 @@ body{
 }
 #home_page{
     background-color: #D4F6CC;
-    top: 25vh;
+    top: 10vh;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 25px;
@@ -26,4 +26,13 @@ body{
     padding-top: 25px;
     height: 30vh;
     width: 50vw;
+}
+#register_home_page{
+    background-color: #81CACF;
+    top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    height: 45vh;
+    width: 40vw;
 }
