@@ -1,3 +1,23 @@
+<?php
+    include('..\includes\connection.php');
+    if(isset($_POST['adminLogin'])){
+        $query = "select email,password,name from admins where email = '$_POST[email]' AND password = '$_POST[password]'";
+        $query_run = mysqli_query($connection,$query);
+        if (mysqli_num_rows($query_run)){
+            echo "<script type='text/javascript'>
+            window.location.href = 'admin_dashboard.php';
+            </script>
+            ";
+        }
+        else{
+            echo "<script type='text/javascript'>
+            alert('Please enter correct Email Id and Password.');
+            window.location.href = 'admin_login.php';
+            </script>
+            ";
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +44,7 @@
                     <input type="password" name="password" class="form-control" placeholder="Enter Password" required>
                 </div>
                 <div class="form-group">
-                    <center><input type="submit" name="userLogin" value="Login" class="btn btn-warning"></center>
+                    <center><input type="submit" name="adminLogin" value="Login" class="btn btn-warning"></center>
                 </div>
             </form>
             <center><a href="..\index.php" class="btn btn-danger">Go to Home</a></center>
