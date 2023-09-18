@@ -36,17 +36,17 @@
                 </tr>
                 <tr>
                     <td style="text-align: center;">
-                        <a href="manage_task.php" type="button" id="link">Update Task</a>
+                        <a href="manage_task.php" type="button" class="link">Update Task</a>
                     </td>
                 </tr>
                 <tr>
                     <td style="text-align: center;">
-                        <a href="apply_leave.php" type="button" id="link">Apply leave</a>
+                        <a href="apply_leave.php" type="button" class="link">Apply leave</a>
                     </td>
                 </tr>
                 <tr>
                     <td style="text-align: center;">
-                        <a href="view_leave.php" type="button" id="link">Leave status</a>
+                        <a href="view_leave.php" type="button" class="link">Leave status</a>
                     </td>
                 </tr>
                 <tr>

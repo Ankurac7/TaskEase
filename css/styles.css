@@ -69,11 +69,11 @@ body{
     text-decoration: none;
     color: white;
 }
-#link{
+.link{
     text-decoration: none;
     color: white;
 }
-#link:hover{
+.link:hover{
     color: black;
 }
 #logout_link:hover{
