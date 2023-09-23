@@ -1,5 +1,23 @@
 <?php
     include('../includes/connection.php');
+    if(isset($_POST['edit_task'])){
+        $query = "update tasks set uid = $_POST[id],description = '$_POST[description]',start_date = '$_POST[start_date]',end_date = '$_POST[end_date]' where tid = $_GET[id]";
+        $query_run = mysqli_query($connection,$query);
+        if($query_run){
+            echo "<script type='text/javascript'>
+            alert('Task updated Succesfully...');
+            window.location.href = 'admin_dashboard.php';
+            </script>
+            ";
+        }
+        else{
+            echo "<script type='text/javascript'>
+            alert('Error...Please try again.');
+            window.location.href = 'admin_dashboard.php';
+            </script>
+            ";
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
