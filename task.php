@@ -1,6 +1,6 @@
 <?php
+    session_start();
     include('includes\connection.php');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +28,23 @@
             <th>Action</th>
         </tr>
         <?php
-            $query="select * from tasks where uid= "
+            $query="select * from tasks where uid= $_SESSION[uid]";
+            $query_run= mysqli_query($connection,$query);
+            $sno=1;
+            while($row =mysqli_fetch_assoc($query_run)){
+                ?>
+                <tr>
+                    <td><?php echo $sno; ?></td>
+                    <td><?php echo $row['tid']; ?></td>
+                    <td><?php echo $row['description']; ?></td>
+                    <td><?php echo $row['start_date']; ?></td>
+                    <td><?php echo $row['end_date']; ?></td>
+                    <td><?php echo $row['status']; ?></td>
+                    <td><a href="update_status.php?id=<?php echo $row['tid'];?>">Update</a></td>
+                </tr>
+                <?php
+                $sno=$sno+1;
+            }
         ?>
     </table>
 </body>
