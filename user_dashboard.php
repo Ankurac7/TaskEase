@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center;">
-                        <a href="manage_task.php" type="button" class="link">Update Task</a>
+                        <a href="task.php" type="button" class="link">Update Task</a>
                     </td>
                 </tr>
                 <tr>
