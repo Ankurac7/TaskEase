@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +14,13 @@
     <script src="bootstrap\js\bootstrap.min.js"></script>
     <!-- External CSS files -->
     <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#manage_task").click(function(){
+                $("#right_sidebar").load("task.php");
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- Header code starts here -->
@@ -20,8 +30,8 @@
                 <h3>TaskEase</h3>
             </div>
             <div class="col-md-6" style="display: inline-block; text-align: right;">
-                <b>Email: </b> Test@gmail.com
-                <span style="margin-left: 25px;"><b>Name: </b></span>Test User
+                <b>Email: </b> <?php echo $_SESSION['email']; ?>
+                <span style="margin-left: 25px;"><b>Name: </b><?php echo $_SESSION['name']; ?></span>
             </div>
         </div>
     </div>
@@ -36,7 +46,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center;">
-                        <a href="task.php" type="button" class="link">Update Task</a>
+                        <a type="button" class="link" id="manage_task">Update Task</a>
                     </td>
                 </tr>
                 <tr>
