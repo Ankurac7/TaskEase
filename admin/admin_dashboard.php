@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include('../includes/connection.php');
     if(isset($_POST['create_task'])){
         $query = "insert into tasks values(null,$_POST[id],'$_POST[description]','$_POST[start_date]','$_POST[end_date]','Not Started')";
@@ -55,8 +56,8 @@
                 <h3>TaskEase</h3>
             </div>
             <div class="col-md-6" style="display: inline-block; text-align: right;">
-                <b>Email: </b> admin@gmail.com
-                <span style="margin-left: 25px;"><b>Name: </b></span>Ankur
+                <b>Email: </b> <?php echo $_SESSION['email']; ?>
+                <span style="margin-left: 25px;"><b>Name: </b><?php echo $_SESSION['name']; ?></span>
             </div>
         </div>
     </div>

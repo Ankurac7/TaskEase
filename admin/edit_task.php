@@ -29,7 +29,7 @@
     <script src="..\includes\jquery_latest.js"></script>
     <!-- Bootstrap files -->
     <link rel="stylesheet" type="text/css" href="..\bootstrap\css\bootstrap.min.css">
-    <script src="bootstrap\js\bootstrap.min.js"></script>
+    <script src="..\bootstrap\js\bootstrap.min.js"></script>
     <!-- External CSS files -->
     <link rel="stylesheet" type="text/css" href="..\css\styles.css">
 </head>

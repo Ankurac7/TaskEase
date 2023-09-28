@@ -1,9 +1,14 @@
 <?php
+    session_start();
     include('..\includes\connection.php');
     if(isset($_POST['adminLogin'])){
         $query = "select email,password,name from admins where email = '$_POST[email]' AND password = '$_POST[password]'";
         $query_run = mysqli_query($connection,$query);
         if (mysqli_num_rows($query_run)){
+            while($row = mysqli_fetch_assoc($query_run)){
+                $_SESSION['email']=$row['email'];
+                $_SESSION['name']=$row['name'];
+            }
             echo "<script type='text/javascript'>
             window.location.href = 'admin_dashboard.php';
             </script>
