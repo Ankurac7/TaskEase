@@ -1,5 +1,5 @@
 # TaskEase
-TaskEase is a user-friendly and customizable web-based Task Management application, built using PHP and powered by MySQL Database for CRUD applications. It simplifies task management, helping you stay organized and productive.
+TaskEase is a user-friendly and customizable web-based Task Management application, built using PHP and powered by MySQL Database for CRUD applications. It simplifies task management, helping you stay organized and productive. Our system is designed to have two user roles: administrators and regular users. The backend of the application is powered by PHP, while MySQL serves as the database. For the frontend, we have employed a combination of HTML, CSS, JavaScript, and Bootstrap to create a user-friendly and visually appealing interface.
 
 
 ## Features
