@@ -1,5 +1,5 @@
 # TaskEase
-"Introducing our Task Manager Web Application, a powerful tool designed to simplify task management and enhance productivity. Leveraging the robust capabilities of PHP and the reliability of MySQL database, our application offers a seamless experience with the following key features:
+"TaskEase is a tool designed to simplify task management and enhance productivity. Leveraging the robust capabilities of PHP and the reliability of MySQL database, our application offers a seamless experience with the following key features:
 
 Effortless Task Creation: Quickly add, edit, and delete tasks with our intuitive user interface, powered by PHP's flexibility.
 
