@@ -1,11 +1,17 @@
 # TaskEase
-TaskEase is a user-friendly and customizable web-based Task Management application, built using PHP and powered by MySQL Database for CRUD applications. It simplifies task management, helping you stay organized and productive. Our system is designed to have two user roles: administrators and regular users. The backend of the application is powered by PHP, while MySQL serves as the database. For the frontend, we have employed a combination of HTML, CSS, JavaScript, and Bootstrap to create a user-friendly and visually appealing interface.
-
+TaskEase is a user-friendly and modular web-based Task Management application, built using PHP and powered by MySQL Database for CRUD applications. It simplifies task management, helping users stay organized and productive. Our system is designed to have two user roles: administrators and regular users. The backend of the application is powered by PHP, while MySQL serves as the database. For the frontend, we have employed a combination of HTML, CSS, JavaScript, and Bootstrap to create a user-friendly and visually appealing simple interface.
 
 ## Features
-User Roles: Administrators and regular users with distinct privileges.
-Task Assignment: Administrators can easily assign tasks to users through the system.
-Progress Tracking: Regular users can update task progress, enabling effective project monitoring.
-PHP Backend: Provides robust server-side functionality for the application.
-MySQL Database: Stores user information, tasks, and progress data securely.
-Frontend Technologies: HTML, CSS, JavaScript, and Bootstrap for a responsive and user-friendly interface.
+
+- **User Roles:** Administrators and regular users with distinct privileges.
+- **Task Assignment:** Administrators can easily assign tasks to users through the system.
+- **Progress Tracking:** Regular users can update task progress, enabling effective project monitoring.
+- **PHP Backend:** Provides robust server-side functionality for the application.
+- **MySQL Database:** Stores user information, tasks, and progress data securely.
+- **Frontend Technologies:** HTML, CSS, JavaScript, and Bootstrap for a responsive and user-friendly interface.
+
+## Technology Stack
+
+<div align="center">
+<img alt="HTML" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>  <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>  <img alt="PHP" src="https://img.shields.io/badge/php%20-%23777BB4.svg?&style=for-the-badge&logo=php&logoColor=white"/>  <img alt="MySQL" src="https://img.shields.io/badge/mysql%20-%230769AD.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>  <img alt="jQuery" src="https://img.shields.io/badge/jquery%20-%2300f.svg?&style=for-the-badge&logo=jquery&logoColor=white"/> <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+</div>
