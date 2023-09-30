@@ -46,6 +46,12 @@
                 $("#right_sidebar").load("manage_task.php");
             });
         });
+
+        $(document).ready(function(){
+            $("#view_leave").click(function(){
+                $("#right_sidebar").load("view_leave.php");
+            });
+        });
     </script>
 </head>
 <body>
@@ -82,7 +88,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center;">
-                        <a href="view_leave.php" type="button" class="link" id="view_leave">Leave applications</a>
+                        <a type="button" class="link" id="view_leave">Leave applications</a>
                     </td>
                 </tr>
                 <tr>
