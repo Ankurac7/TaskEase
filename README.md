@@ -6,9 +6,10 @@ TaskEase is a user-friendly and modular web-based Task Management application, b
 - **User Roles:** Administrators and regular users with distinct privileges.
 - **Task Assignment:** Administrators can easily assign tasks to users through the system.
 - **Progress Tracking:** Regular users can update task progress, enabling effective project monitoring.
+- **Leave Management:** Users can apply for leave directly through the system, specifying the type of leave and the dates requested. Administrators have the authority to approve or reject leave requests, ensuring efficient leave management within the application.
 - **PHP Backend:** Provides robust server-side functionality for the application.
 - **MySQL Database:** Stores user information, tasks, and progress data securely.
-- **Frontend Technologies:** HTML, CSS, JavaScript, and Bootstrap for a responsive and user-friendly interface.
+- **Frontend Technologies:** HTML, CSS, JavaScript, and Bootstrap for a simple, responsive and user-friendly interface.
 
 ## Technology Stack
 
