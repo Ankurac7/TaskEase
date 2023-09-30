@@ -1,5 +1,25 @@
 <?php
     session_start();
+    include('includes\connection.php');
+    if(isset($_POST['submit_leave'])){
+        $query="insert into leaves values(null,$_SESSION[uid],'$_POST[subject]','$_POST[message]','No Action')";
+        $query_run=mysqli_query($connection,$query);
+        if($query_run){
+            echo "<script type='text/javascript'>
+            alert('Form submitted succesfully...');
+            window.location.href = 'user_dashboard.php';
+            </script>
+            ";
+        }
+        else{
+            echo "<script type='text/javascript'>
+            alert('Error...Please try again.');
+            window.location.href = 'user_dashboard.php';
+            </script>
+            ";
+        }
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +38,12 @@
         $(document).ready(function(){
             $("#manage_task").click(function(){
                 $("#right_sidebar").load("task.php");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#apply_leave").click(function(){
+                $("#right_sidebar").load("leaveForm.php");
             });
         });
     </script>
@@ -51,7 +77,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center;">
-                        <a href="apply_leave.php" type="button" class="link">Apply leave</a>
+                        <a type="button" class="link" id="apply_leave">Apply leave</a>
                     </td>
                 </tr>
                 <tr>
