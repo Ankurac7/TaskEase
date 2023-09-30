@@ -1,5 +1,6 @@
 <?php
     session_start();
+    if(isset($_SESSION['email'])){
     include('includes\connection.php');
 ?>
 <!DOCTYPE html>
@@ -49,3 +50,8 @@
     </table>
 </body>
 </html>
+<?php
+}
+else{
+    header('Location:user_login.php');
+}

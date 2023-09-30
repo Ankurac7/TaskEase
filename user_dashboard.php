@@ -1,5 +1,6 @@
 <?php
     session_start();
+    if(isset($_SESSION['email'])){
     include('includes\connection.php');
     if(isset($_POST['submit_leave'])){
         $query="insert into leaves values(null,$_SESSION[uid],'$_POST[subject]','$_POST[message]','No Action')";
@@ -111,3 +112,9 @@
     </div>
 </body>
 </html>
+<?php
+}
+else(
+    header('Location:user_login.php')
+)
+?>

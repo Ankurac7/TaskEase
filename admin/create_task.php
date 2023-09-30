@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    if(isset($_SESSION['email'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,3 +49,8 @@
     </div>
 </body>
 </html>
+<?php
+}
+else{
+    header('Location:admin_login.php');
+}

@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    if(isset($_SESSION['email'])){
+?>
 <html>
 <body>
     <h3>Apply leave</h3><br>
@@ -18,3 +22,8 @@
     </div>
 </body>
 </html>
+<?php
+}
+else{
+    header('Location:user_login.php');
+}
