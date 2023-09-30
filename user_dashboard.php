@@ -46,6 +46,12 @@
                 $("#right_sidebar").load("leaveForm.php");
             });
         });
+
+        $(document).ready(function(){
+            $("#leave_status").click(function(){
+                $("#right_sidebar").load("leave_status.php");
+            });
+        });
     </script>
 </head>
 <body>
@@ -82,7 +88,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center;">
-                        <a href="view_leave.php" type="button" class="link">Leave status</a>
+                        <a type="button" class="link" id="leave_status">Leave status</a>
                     </td>
                 </tr>
                 <tr>
